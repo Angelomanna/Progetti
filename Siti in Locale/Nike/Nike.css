@@ -1,0 +1,197 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+}
+.primodiv{
+    height:100vh;
+    width:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background-nike.jpg);
+    background-attachment: fixed;
+
+}
+.navbar{
+    width:85%;
+    display: flex; 
+    justify-content: space-between;
+}
+img{
+    height: 69px;
+    width: 184px;
+    padding: 47px;
+}
+ul li{
+    display: inline-block;
+    margin: 0 25px;
+    position: relative;
+    bottom: -50px;
+    color:whitesmoke
+}
+ul li::after{
+  content:'';
+  height: 3px;
+  width: 0px;
+  position: absolute;
+  background: darkblue;
+  left:0px;
+  bottom: -10px;
+  transition: 0.5s;
+}
+ul li:hover::after{
+    width: 100%;
+}
+  .scritte{
+    margin-top: 5%;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 57px;
+    font-family: fantasy;
+    font-weight: 400;
+    font-style: italic;
+    color: whitesmoke;
+}
+p{
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+}
+.Enter{
+    font-size: 18px ;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: fantasy;
+    color:white;
+    padding:10px 70px;
+    border-radius: 2em;
+    border:solid darkblue;
+}
+.Enter:hover{
+    background-color: darkblue;
+    transition: 0.5s;
+}
+
+.secondodiv{
+    height:auto;
+    width:auto;
+    background-color:black;
+}
+.fotoatre{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.primaimmagine, .secondaimmagine, .terzaimmagine{
+    height:200px;
+    width:200px;
+    background-color: red;
+    margin:20px;
+}
+.primaimmagine{
+    background-image: url("https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/f411a3ec-39b7-490e-b2c8-335264adb054/scarpa-air-max-95-SJrR6z.png");
+    background-size:cover;
+}
+.secondaimmagine{
+    background-image:url("https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/99486859-0ff3-46b4-949b-2d16af2ad421/custom-nike-dunk-high-by-you-shoes.png");
+    background-size:cover;
+}
+.terzaimmagine{
+    background-image: url("https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5b0981ff-45f8-40c3-9372-32430a62aaea/scarpa-dunk-high-xwJcmh.png");
+    background-size: cover;
+}
+
+.primaimmagine:hover, .secondaimmagine:hover, .terzaimmagine:hover{
+    height:250px;
+    width:250px;
+    transition:0.5s;
+    
+}
+.terzodiv{
+    display: flex;
+    height:auto;
+    width:auto;
+    background-color: rgba(128, 128, 128, 0.548);
+    align-items: center;
+    flex-direction: column;
+}
+.icone{
+    font-size:25px;
+    gap:10px;
+    cursor:pointer;
+}
+.fa-facebook{
+    color:blue;
+}
+.fa-twitter{
+    color:aqua;
+}
+.fa-instagram{
+    color:red;
+}
+.fa-tiktok{
+    color:black;
+}
+.bottonesu{
+    font-size:40px;
+    left:45%;
+    position:relative;
+    cursor:pointer;
+    bottom:30px;
+}
+.fa-arrow-up:hover{
+    color:rgba(0, 0, 0, 0.459)
+}
+
+@media screen and (max-width:914px)  {
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .scritte{
+        margin-top: 25%;
+    }
+}
+@media screen and (max-width:756px){
+    .Enter{
+        font-size:12px;
+        padding:5px 30px;
+        border-radius: 2em;
+    }
+    img{
+        
+        position:absolute;
+        top:30%;
+        left:30%;
+        transform: translate(0,-142%);
+    }
+    ul{
+        display: none;
+    }
+    .primodiv{
+        height:80vh;
+    }
+    .bottonesu{
+        display: none;
+    }
+    .fotoatre{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:520px){
+    h1{
+        font-size:20px;
+    }
+    p{
+        font-size:20px;
+        width:100%;
+    }
+    img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+} 

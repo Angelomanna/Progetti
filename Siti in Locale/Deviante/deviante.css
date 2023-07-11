@@ -1,0 +1,205 @@
+html,body{
+    background-color: black;
+    font-family: "Roboto Slab", "Droid Sans", sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    
+}
+img{
+    height: 177px;
+    width: 359px;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    margin: 0 10px;
+}
+.login{
+    color: white;
+    border: 1px solid white;
+    padding:10px 15px;
+    cursor: pointer;
+}
+.joinnow{
+    background-color: rgb(190, 30, 45);
+    color: white;
+    border: 1px solid rgb(190, 30, 45);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.joinnow:hover{
+    background-color: red;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    border:transparent;
+    color:whitesmoke;
+    position: relative;
+    right: -21%;
+    top: 149px;
+}
+h1{
+    font-size: 24px;
+}
+.enter{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(190, 30, 45);
+    color: white;
+    border: 1px solid rgb(190, 30, 45);
+    padding: 10px 20px;
+    cursor: pointer;
+    width:200px;
+    position: relative;
+    right: -33%;
+    margin-top: 38px;
+}
+.exit{
+    color: rgb(190, 30, 45);
+}
+.terms{
+    color:white;
+    font-weight: bold;
+}
+.paragrafo{
+    text-decoration: underline;
+    font-weight: bold;
+    color: white;
+}
+.foto2{
+    margin-bottom: -37px;
+    position: relative;
+    right: -205px;
+    bottom: 20px;
+}
+ul li{
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 20px;
+    position: relative;
+    right: 4%;
+    cursor: pointer;
+}
+.paragrafo2{
+    font-size: 12px;
+    margin-top: 0px;
+}
+@media screen and (max-width:912px) {
+    .enter{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(190, 30, 45);
+        color: white;
+        border: 1px solid rgb(190, 30, 45);
+        padding: 10px 20px;
+        cursor: pointer;
+        width:200px;
+        position: relative;
+        right: -26%;
+        margin-top: 38px;
+    }
+    .foto2{
+        margin-bottom: -37px;
+        position: relative;
+        right: -118px;
+        bottom: 20px;
+    }
+}
+@media screen and (max-width:765px){
+    .login{
+        display: none;
+    }
+    .joinnow{
+        display: none;
+    }
+    .header img{
+        margin-left:25%
+    }
+    .foto2{
+        position: relative;
+        left:26px
+    }
+}
+@media screen and (max-width:540px) {
+    img{
+        display: none;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 60%;
+        border:transparent;
+        color:whitesmoke;
+        position: relative;
+        right: -25%;
+        top: 149px;
+    }
+    .enter{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(190, 30, 45);
+        color: white;
+        border: 1px solid rgb(190, 30, 45);
+        padding: 10px 20px;
+        cursor: pointer;
+        width:200px;
+        position: relative;
+        right: -8%;
+        margin-top: 38px;
+    }
+    .login{
+        display: none;
+    }
+    .joinnow{
+        display: none;
+    }
+    .foto2{
+        display: none;
+    }
+}
+@media screen and (max-width:414px) {
+    img{
+        display: none;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 60%;
+        border:transparent;
+        color:whitesmoke;
+        position: relative;
+        right: -26%;
+        top: 36px;
+    }
+    .enter{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(190, 30, 45);
+        color: white;
+        border: 1px solid rgb(190, 30, 45);
+        padding: 10px 20px;
+        cursor: pointer;
+        width:47px;
+        font-size: 10px;
+        position: relative;
+        right: -29%;
+        margin-top: 38px;
+    }
+    .foto2{
+        margin-bottom: -37px;
+        position: relative;
+        right: 68px;
+        bottom: 20px;
+    }
+}

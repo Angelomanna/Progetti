@@ -1,0 +1,66 @@
+
+body{
+    background-color: red;
+}
+.hamburger{
+    border: transparent;
+    height:80px;
+    width: 80px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor:pointer
+}     
+
+.contenuto1 {
+    height: 5px;
+    width:100%;
+    background-color: black;
+    
+
+}
+.contenuto2 {
+    height: 5px;
+    width:100%;
+    background-color: black;
+    
+}
+.contenuto3 {
+    height: 5px;
+    width:100%;
+    background-color: black;
+    
+}
+.contenuto1.active{
+    height: 8px;
+    width:100%;
+    background-color: black;
+    transform: rotate(45deg);
+    position:absolute;
+    top:44%;
+    left:1%;
+    transition:0.5s;
+
+}
+.contenuto2.active{
+    height: 8px;
+    width:0;
+    background-color: black;
+    visibility: hidden;
+}
+.contenuto3.active{
+    height: 8px;
+    width:100%;
+    background-color: black;
+    transform: rotate(-45deg );
+    position:absolute;
+    top:44%;
+    left:1%;
+    transition:0.5s
+}
+body.active{
+    background-color:black
+}
